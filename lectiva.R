@@ -1,4 +1,4 @@
-lapply(c('rlang', 'rvest', 'tibble', 'httr', 'stringr', 'tokenizers', 'readxl', 'writexl'), function(x) library(x, character.only = T))
+lapply(c('rlang', 'rvest', 'tibble', 'httr', 'stringr', 'tokenizers'), function(x) library(x, character.only = T))
 enlaces <- read.csv("enlaces.csv")
 enlaces <- unique(enlaces)
 imagenes <- enlaces$Imagenes
