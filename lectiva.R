@@ -81,7 +81,7 @@ for(enlace in 1:10000){ ######5000) {
       "Duración En horas" = ifelse(is_empty(duracionhoras), " ", duracionhoras),
       "Plazo Realizacion" = str_replace_all(ifelse(is_empty(plazorealizacion), " ", plazorealizacion), pattern = '\\"', "-"),
       "URL Curso" = enlaces[enlace],
-      "Todo Texto" = str_replace_all(todotexto, pattern = '\\"', "-"))
+      "Todo Texto" = " ") ###str_replace_all(todotexto, pattern = '\\"', "-")
     if(nrow(theROW) == 0) {
       print("La estructura del sitio es distinta")
       write.table(x = data.frame("enlace" = enlace), 
